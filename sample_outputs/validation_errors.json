@@ -1,0 +1,4 @@
+{
+  "missing_text": {"error": "Missing or empty required field: text", "field": "text"},
+  "missing_creator_id": {"error": "Missing or empty required field: creator_id", "field": "creator_id"}
+}
