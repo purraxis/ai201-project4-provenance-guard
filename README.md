@@ -324,9 +324,11 @@ One implementation divergence: the original plan said Groq failures would use a 
 
 ## AI Usage
 
-1. I asked Codex to convert the CodePath PDF and project prompt into a rubric checklist and implementation plan. It produced the checklist, file plan, scoring defaults, and evidence requirements. I revised the plan to require `planning.md` before code and to make README the canonical grading artifact.
+1. I asked Codex to convert the CodePath PDF and project prompt into a rubric checklist and implementation plan. It produced the checklist, file plan, scoring defaults, and evidence requirements. I revised the workflow to require `planning.md` before implementation and to make `README.md` the canonical grading artifact so that every required feature had visible evidence.
 
-2. I asked Codex to implement the backend from the approved plan. It produced Flask routes, detection functions, scoring logic, labels, audit logging, tests, sample outputs, and README evidence. I reviewed and corrected the fallback scoring because the first version made all saved examples uncertain.
+2. I asked Codex to implement the backend from the approved plan. It produced the Flask routes, Groq detection function, stylometric heuristic function, scoring logic, label mapping, audit logging, tests, sample outputs, and README evidence. I reviewed the implementation, ran the unit tests and API tests, and corrected the fallback/scoring behavior because the first version made too many saved examples uncertain.
+
+3. I used Codex to help audit the final project against the rubric. I then manually verified the live API behavior with curl commands, checked that Groq was returning `status: ok`, confirmed that `/submit`, `/appeal`, `/log`, rate limiting, and sample outputs worked, and updated README values so the documentation matched the actual saved evidence.
 
 ## Walkthrough/Demo
 
