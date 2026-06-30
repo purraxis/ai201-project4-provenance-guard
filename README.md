@@ -332,7 +332,7 @@ One implementation divergence: the original plan said Groq failures would use a 
 
 ## Walkthrough/Demo
 
-Video link placeholder: `[https://canva.link/69wv8axf2vdw4d3]`
+Video walkthrough: [Canva demo video](https://canva.link/p6c19mp12q4wmae)
 
 The walkthrough should show:
 
